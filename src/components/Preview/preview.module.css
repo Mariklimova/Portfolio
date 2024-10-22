@@ -1,0 +1,81 @@
+.wrapper {
+    & .visit_card {
+        display: flex;
+        justify-content: space-between;
+
+        & .about_me {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 629px;
+
+            & p {
+                font: 400 22px 22px;
+                color: #000000;
+            }
+
+            & h1 {
+                font: 800 88px Poppins;
+                color: #000000;
+            }
+        }
+
+        & img {
+            background-image: url(${foto});
+            width: 440px;
+            height: 679px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    & .skills {
+        display: flex;
+
+        & .roles {
+            display: flex;
+
+            & .roles_item {
+                display: flex;
+
+                .icon_1 {
+                    background-image: url('./assets/icon1.svg');
+                    width: 30px;
+                    height: 30px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .icon_2 {
+                    background-image: url('./assets/icon2.svg');
+                    width: 30px;
+                    height: 30px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .icon_3 {
+                    background-image: url('./assets/icon3.svg');
+                    width: 30px;
+                    height: 30px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                & h3 {
+                    font-family: Manrope;
+                    font-size: 16px;
+                    font-weight: 800;
+                    color: #000000;
+                }
+
+                & p {
+                    font-family: Manrope;
+                    font-size: 10px;
+                    font-weight: 300;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
