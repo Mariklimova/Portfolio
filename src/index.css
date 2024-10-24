@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 1335px;
+  max-width: 1335px;
   background: #F9F5F2;
   /* overflow: hidden; */
   margin: auto;

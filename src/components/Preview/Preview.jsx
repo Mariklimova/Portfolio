@@ -1,5 +1,5 @@
 import style from './preview.module.css';
-import foto from './assets/Avatar.svg'
+import foto from './assets/Avatar2.png'
 
 export default function Preview() {
 
@@ -14,7 +14,7 @@ export default function Preview() {
             <div className={style.visit_card}>
                 <div className={style.about_me}>
                     <p>Hi, My name is Agil Zulfa</p>
-                    <h1>Full Stack Developer</h1>
+                    <h1>Full Stack Разработчик</h1>
                     <p>focus in harnessing the power of Next.js with Express.js and REST API to craft dynamic web applications. creating seamless user experiences that bring ideas to life.</p>
                 </div>
                 <img src={foto} alt="foto" />
@@ -26,6 +26,14 @@ export default function Preview() {
                         <div className={style.info_item}>
                         <h3 className={style.roles_name}>{el.name}</h3>
                         <p>{el.description}</p>
+                        <div className={style.line}></div>
+                        <ul>
+                            <h3>I've had experiences with</h3>
+                            <li>Firebase Database</li>
+                            <li>MySQL Database</li>
+                            <li>GIT, GitHub, Bitbucket</li>
+                            <li>Figma, Adobe XD, Sketch</li>
+                        </ul>
                         </div>
                     </div>)}
                 </div>

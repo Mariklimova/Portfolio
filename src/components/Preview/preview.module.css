@@ -1,4 +1,6 @@
 .wrapper {
+    margin-top: 100px;
+    
     & .visit_card {
         display: flex;
         justify-content: space-between;
@@ -10,7 +12,7 @@
             max-width: 629px;
 
             & p {
-                font: 400 22px 22px;
+                font: 400 22px Poppins;
                 color: #000000;
             }
 
@@ -22,57 +24,54 @@
 
         & img {
             background-image: url(${foto});
-            width: 440px;
-            height: 679px;
+            width: 500px;
+            height: 500px;
             background-size: contain;
             background-repeat: no-repeat;
+            border-radius: 250px;
         }
     }
 
     & .skills {
         display: flex;
+        margin-top: 100px;
 
         & .roles {
             display: flex;
+            gap: 70px;
 
             & .roles_item {
                 display: flex;
+                gap: 15px;
 
-                .icon_1 {
-                    background-image: url('./assets/icon1.svg');
+                .icon_1,
+                .icon_2,
+                .icon_3 {
                     width: 30px;
                     height: 30px;
                     background-size: contain;
                     background-repeat: no-repeat;
+                }
+
+                .icon_1 {
+                    background-image: url('./assets/icon1.svg');
                 }
 
                 .icon_2 {
                     background-image: url('./assets/icon2.svg');
-                    width: 30px;
-                    height: 30px;
-                    background-size: contain;
-                    background-repeat: no-repeat;
                 }
 
                 .icon_3 {
                     background-image: url('./assets/icon3.svg');
-                    width: 30px;
-                    height: 30px;
-                    background-size: contain;
-                    background-repeat: no-repeat;
                 }
 
                 & h3 {
-                    font-family: Manrope;
-                    font-size: 16px;
-                    font-weight: 800;
+                    font: 800 16px Poppins;
                     color: #000000;
                 }
 
                 & p {
-                    font-family: Manrope;
-                    font-size: 10px;
-                    font-weight: 300;
+                    font: 300 10px Poppins;
                     color: #000000;
                 }
             }

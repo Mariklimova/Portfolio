@@ -1,0 +1,48 @@
+.wrapper {
+    margin: 100px auto;
+    max-width: 1335px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 1025px;
+        margin: auto;
+
+        & h2 {
+            font-family: Poppins;
+            font-size: 150px;
+            font-weight: 800;
+            text-align: center;
+            color: #000000;
+        }
+
+        p {
+            font-family: Poppins;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            text-align: center;
+
+        }
+
+        button {
+            border: 1px solid #000000;
+            box-shadow: 4px 3px 0px 1px #000000;
+            background: #3a76ee;
+            color: #000000;
+            border-radius: 15px;
+            padding: 11px 34px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 600;
+
+            &:hover{
+                scale: (1.2);
+            }
+
+        }
+    }
+
+}
