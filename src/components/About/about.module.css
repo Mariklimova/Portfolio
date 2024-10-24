@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 100px auto;
+    margin: 300px auto;
     max-width: 1335px;
 
     .info {
@@ -15,6 +15,7 @@
             font-size: 150px;
             font-weight: 800;
             text-align: center;
+            line-height: 150px;
             color: #000000;
         }
 
@@ -37,10 +38,6 @@
             font-family: Poppins;
             font-size: 20px;
             font-weight: 600;
-
-            &:hover{
-                scale: (1.2);
-            }
 
         }
     }

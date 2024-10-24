@@ -4,6 +4,7 @@
     & .visit_card {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap-reverse;
 
         & .about_me {
             display: flex;
@@ -18,6 +19,7 @@
 
             & h1 {
                 font: 800 88px Poppins;
+                line-height: 100px;
                 color: #000000;
             }
         }
@@ -29,6 +31,7 @@
             background-size: contain;
             background-repeat: no-repeat;
             border-radius: 250px;
+            box-shadow: 5px 5px 5px 5px #0000004d;
         }
     }
 
