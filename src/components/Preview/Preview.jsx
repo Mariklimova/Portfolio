@@ -39,7 +39,7 @@ export default function Preview() {
                 viewport={{ once: true }}
                 className={style.visit_card}>
                 <div className={style.about_me}>
-                    <motion.p custom={1} variants={animation}>Hi, My name is Agil Zulfa</motion.p>
+                    <motion.p custom={1} variants={animation}>Привет, меня зовут Марина Климова, и я</motion.p>
                     <motion.h1 custom={2} variants={animation}>Full Stack Разработчик</motion.h1>
                     <motion.p custom={3} variants={animation}>focus in harnessing the power of Next.js with Express.js and REST API to craft dynamic web applications. creating seamless user experiences that bring ideas to life.</motion.p>
                 </div>

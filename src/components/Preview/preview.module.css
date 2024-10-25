@@ -13,14 +13,14 @@
             max-width: 629px;
 
             & p {
-                font: 400 22px Poppins;
+                font: 400 22px Montserrat;
                 color: #000000;
             }
 
             & h1 {
-                font: 800 88px Poppins;
+                font: 800 88px Montserrat;
                 line-height: 100px;
-                color: #000000;
+                color: #022f8a;
             }
         }
 
@@ -69,12 +69,12 @@
                 }
 
                 & h3 {
-                    font: 800 16px Poppins;
+                    font: 800 16px Montserrat;
                     color: #000000;
                 }
 
                 & p {
-                    font: 300 10px Poppins;
+                    font: 400 10px Montserrat;
                     color: #000000;
                 }
             }

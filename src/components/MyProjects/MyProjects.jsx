@@ -13,7 +13,7 @@ export default function MyProjects() {
     
     return <>
         <div className={style.wrapper}>
-            <h2>My Projects</h2>
+            <h2>Мои проекты</h2>
             <p>Some Projects that i’ve done with a year experiences</p>
             <div className={style.whirligig_projects}>
                 {arr_projects.map((el) => <div key={el.id} className={style.project_item}>

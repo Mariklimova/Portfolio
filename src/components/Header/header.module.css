@@ -1,35 +1,63 @@
 .wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 73px;
+    margin: 73px 5px 0;
 }
 
 .images {
     display: flex;
     gap: 30px;
 
-    & .linkedin {
+    .linkedin,
+    .github,
+    .telegram,
+    .email {
+        width: 32px;
+        height: 32px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .linkedin {
         background-image: url('./assets/linkedin.svg');
-        width: 32px;
-        height: 32px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
 
-    & .github {
+    .github {
         background-image: url('./assets/github.svg');
-        width: 32px;
-        height: 32px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
 
-    & .telegram {
+    .telegram {
         background-image: url('./assets/telegram.svg');
-        width: 32px;
-        height: 32px;
-        background-size: contain;
-        background-repeat: no-repeat;
+    }
+
+    .email {
+        background-image: url('./assets/email.svg');
+       
+    }
+
+    .email::after {
+        content: "mariku22@yandex.ru"; /* Замените на Ваш реальный email */
+        position: absolute;
+        bottom: 100%; /* Позиционируем меню над элементом */
+        left: 50%; /* Центруем по горизонтали */
+        transform: translateX(-50%);
+        background-color: rgba(200, 200, 200, 0.9); /* Серый фон */
+        color: #000; /* Цвет текста */
+        padding: 8px; /* Отступы вокруг текста */
+        border-radius: 4px; /* Скругление углов */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+        white-space: nowrap; /* Не переносить текст */
+        visibility: hidden; /* По умолчанию скрыто */
+        opacity: 0; /* Изначально невидимо */
+        transition: opacity 0.3s, visibility 0.3s; /* Плавный переход */
+        font: 700 14px Montserrat;
+    }
+
+    .email:hover::after {
+        visibility: visible; /* Показываем при наведении */
+        opacity: 1; /* Делаем видимым */
     }
 }
 
@@ -38,7 +66,8 @@
     gap: 60px;
 
     & p {
-        font: 400 24px Poppins;
+        font: 400 22px Montserrat;
         color: #000000;
+        cursor: pointer;
     }
 }
