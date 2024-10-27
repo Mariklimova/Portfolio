@@ -53,19 +53,19 @@
         }
 
         .email::after {
-            content: "mariku22@yandex.ru"; /* Замените на Ваш реальный email */
+            content: "mariku22@yandex.ru";
             position: absolute;
-            bottom: 100%; /* Позиционируем меню над элементом */
-            left: 50%; /* Центруем по горизонтали */
+            bottom: 100%; 
+            left: 50%; 
             transform: translateX(-50%);
             background-color: rgba(200, 200, 200, 0.9); /* Серый фон */
-            color: #000; /* Цвет текста */
-            padding: 8px; /* Отступы вокруг текста */
-            border-radius: 4px; /* Скругление углов */
+            color: #000;
+            padding: 8px;
+            border-radius: 4px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
-            white-space: nowrap; /* Не переносить текст */
-            visibility: hidden; /* По умолчанию скрыто */
-            opacity: 0; /* Изначально невидимо */
+            white-space: nowrap;
+            visibility: hidden;
+            opacity: 0;
             transition: opacity 0.3s, visibility 0.3s; /* Плавный переход */
             font: 700 14px Montserrat;
         }

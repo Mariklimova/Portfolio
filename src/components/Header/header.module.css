@@ -41,39 +41,25 @@
 
     .email::after {
         content: "mariku22@yandex.ru";
-        /* Замените на Ваш реальный email */
         position: absolute;
         bottom: 100%;
-        /* Позиционируем меню над элементом */
         left: 50%;
-        /* Центруем по горизонтали */
         transform: translateX(-50%);
         background-color: rgba(200, 200, 200, 0.9);
-        /* Серый фон */
         color: #000;
-        /* Цвет текста */
         padding: 8px;
-        /* Отступы вокруг текста */
         border-radius: 4px;
-        /* Скругление углов */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        /* Тень */
         white-space: nowrap;
-        /* Не переносить текст */
         visibility: hidden;
-        /* По умолчанию скрыто */
         opacity: 0;
-        /* Изначально невидимо */
         transition: opacity 0.3s, visibility 0.3s;
-        /* Плавный переход */
         font: 700 14px Montserrat;
     }
 
     .email:hover::after {
         visibility: visible;
-        /* Показываем при наведении */
         opacity: 1;
-        /* Делаем видимым */
     }
 }
 
