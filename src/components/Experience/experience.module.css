@@ -2,23 +2,20 @@
     margin: 300px 0 650px;
 
     .title {
-        font-family: Poppins;
-        font-size: 44px;
-        font-weight: 800;
+        font: 800 44px Montserrat;
         text-align: center;
         color: #000000;
     }
 
     p {
-        font-family: Poppins;
-        font-size: 25px;
-        font-weight: 300;
+        font: 300 25px Montserrat;
         text-align: center;
         color: #000000;
     }
 
     .exp_items {
         display: flex;
+        justify-content: center;
         gap: 67px;
         z-index: 10;
         position: relative;
@@ -38,10 +35,7 @@
             flex-direction: column;
 
             .title_item {
-                font-family: Poppins;
-                font-size: 16px;
-                font-weight: 600;
-                text-align: center;
+                font: 700 16px Montserrat;
                 color: #000000;
             }
 
@@ -49,7 +43,7 @@
                 font-family: Poppins;
                 font-size: 16px;
                 font-weight: 300;
-                text-align: center;
+                font: 400 14px Montserrat;
                 color: #000000;
             }
 
@@ -59,14 +53,20 @@
     .images {
         position: relative;
 
+        .react,
+        .js,
+        .nextjs {
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+        }
+
         .react {
             background-image: url('./assets/react2.svg');
             width: 491px;
             height: 436px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            position: absolute;
-            left: 1050px;
+            /* left: 1050px; */
+            left: 80%;
             top: -540px;
             z-index: 0;
         }
@@ -75,10 +75,8 @@
             background-image: url('./assets/JS2.svg');
             width: 266px;
             height: 266px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            position: absolute;
-            left: 1150px;
+            /* left: 1150px; */
+            left: 85%;
             top: 65px;
         }
 
@@ -86,11 +84,15 @@
             background-image: url('./assets/nextjs2.svg');
             width: 461px;
             height: 452px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            position: absolute;
-            left: -400px;
+            /* left: -400px; */
+            left: -15%;
             top: 190px;
         }
     }
+}
+
+@media screen and (max-width:1000px){
+    .images {
+        display: none;
+    } 
 }

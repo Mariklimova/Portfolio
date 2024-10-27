@@ -29,7 +29,7 @@ export default function Preview() {
         id: 1, name: 'Frontend', description: 'Briefing, wireframe, UX, UI and branding.', roles_icon: style.icon_1
     },
     { id: 2, name: 'Backend', description: 'Briefing, wireframe, UX, UI and branding.', roles_icon: style.icon_2 },
-    { id: 3, name: 'Database Architect', description: 'Briefing, wireframe, UX, UI and branding.', roles_icon: style.icon_3 }]
+    { id: 3, name: 'Архитектор баз данных', description: 'Briefing, wireframe, UX, UI and branding.', roles_icon: style.icon_3 }]
 
     return <>
         <div className={style.wrapper}>
@@ -41,7 +41,7 @@ export default function Preview() {
                 <div className={style.about_me}>
                     <motion.p custom={1} variants={animation}>Привет, меня зовут Марина Климова, и я</motion.p>
                     <motion.h1 custom={2} variants={animation}>Full Stack Разработчик</motion.h1>
-                    <motion.p custom={3} variants={animation}>focus in harnessing the power of Next.js with Express.js and REST API to craft dynamic web applications. creating seamless user experiences that bring ideas to life.</motion.p>
+                    <motion.p custom={3} variants={animation}>который, сосредоточен на использовании возможностей Next.js с Express.js и REST API для создания динамических веб-приложений, создавая бесперебойный пользовательский интерфейс и воплощающий свои идеи в жизнь.</motion.p>
                 </div>
                 <motion.img
                     custom={4} variants={animation} src={foto} alt="foto" />
@@ -59,7 +59,7 @@ export default function Preview() {
                             <p>{el.description}</p>
                             <div className={style.line}></div>
                             <ul>
-                                <h3>I've had experiences with</h3>
+                                <h3>У меня был опыт с</h3>
                                 <li>Firebase Database</li>
                                 <li>MySQL Database</li>
                                 <li>GIT, GitHub, Bitbucket</li>

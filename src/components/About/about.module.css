@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 300px auto;
+    margin: 300px 5px;
     max-width: 1335px;
 
     .info {
@@ -10,7 +10,7 @@
         max-width: 1025px;
         margin: auto;
 
-        & h2 {
+        h2 {
             font-family: Poppins;
             font-size: 150px;
             font-weight: 800;
@@ -42,4 +42,11 @@
         }
     }
 
+}
+
+@media screen and (max-width:800px) {
+    .wrapper .info h2 {
+        font-size: 120px;
+        line-height: 120px;
+    }
 }

@@ -71,8 +71,14 @@
         }
     
         .email:hover::after {
-            visibility: visible; /* Показываем при наведении */
-            opacity: 1; /* Делаем видимым */
+            visibility: visible;
+            opacity: 1;
         }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .wrapper .icons_contacts {
+        gap: 40px;
     }
 }
