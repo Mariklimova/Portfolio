@@ -77,9 +77,17 @@
                     color: #000000;
                 }
 
-                p {
-                    font: 400 10px Montserrat;
-                    color: #000000;
+                .line {
+                    border:1px solid #66666676;
+
+                }
+
+                .info_item ul {
+                    list-style-type: square;
+                    li {
+                        font: 400 12px Montserrat;
+                        color: #000000;
+                    }
                 }
             }
         }
@@ -123,5 +131,19 @@
 @media screen and (max-width:600px) {
     .skills .roles {
         gap: 50px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .wrapper .visit_card .about_me {
+        & h1 {
+            font-size: 55px;
+            line-height: 65px;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+
     }
 }

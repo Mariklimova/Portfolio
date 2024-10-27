@@ -23,6 +23,12 @@ const animation = {
 };
 
 export default function About() {
+    const handleContactClick = () => {
+        const footer = document.getElementById('footer');
+        if (footer) {
+            footer.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return <>
         <motion.div
             initial='hiddenHorizontal'
@@ -30,9 +36,9 @@ export default function About() {
             viewport={{ once: true }}
             className={style.wrapper}>
             <div className={style.info}>
-                <motion.h2 custom={1} variants={animation}>Get in touch with me</motion.h2>
-                <motion.p custom={2} variants={animation}>I am a passionate Front-end developer currently in my third year of studying Informatics/Computer Science at Siliwangi University. Feel free to explore my portfolio to see the diverse projects I've completed. If you're interested in my work and would like me to bring your project to life, don't hesitate to reach out to me!</motion.p>
-                <motion.button custom={3} variants={animation}>Contact me</motion.button>
+                <motion.h2 custom={1} variants={animation}>Свяжитесь со мной</motion.h2>
+                <motion.p custom={2} variants={animation}>Я заитересованный разработчик Front-end. Не стесняйтесь изучать мое портфолио, чтобы увидеть разнообразные проекты, которые я выполнил. Если вас заинтересовала моя работа и вы хотите, чтобы я воплотил ваш проект в жизнь, не стесняйтесь обращаться ко мне!</motion.p>
+                <motion.button custom={3} variants={animation} onClick={handleContactClick}>Мои контакты</motion.button>
 
             </div>
         </motion.div>

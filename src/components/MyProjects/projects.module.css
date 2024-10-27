@@ -36,8 +36,8 @@
             gap: 10px;
             max-width: 350px;
 
-            .img_item {
-                background-image: url(${img});
+            .img_item1 {
+                background-image: url(${img1});
                 width: 320px;
                 height: 250px;
                 background-size: contain;

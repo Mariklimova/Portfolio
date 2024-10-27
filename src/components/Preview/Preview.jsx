@@ -1,5 +1,5 @@
 import style from './preview.module.css';
-import foto from './assets/Avatar2.png';
+import foto from './assets/Avatar.png';
 import { motion } from 'framer-motion';
 
 const animation = {
@@ -26,10 +26,10 @@ const animation = {
 export default function Preview() {
 
     const arr_roles = [{
-        id: 1, name: 'Frontend', description: 'Briefing, wireframe, UX, UI and branding.', roles_icon: style.icon_1
+        id: 1, name: 'Frontend', description: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Redux Toolkit', 'Redux Toolkit Query', 'Material UI', 'Mantine', 'HTML', 'CSS/SCSS', 'Framer motion', 'Styled components'], roles_icon: style.icon_1, also: null, additionally:[]
     },
-    { id: 2, name: 'Backend', description: 'Briefing, wireframe, UX, UI and branding.', roles_icon: style.icon_2 },
-    { id: 3, name: 'Архитектор баз данных', description: 'Briefing, wireframe, UX, UI and branding.', roles_icon: style.icon_3 }]
+    { id: 2, name: 'Backend', description: ['JavaScript', 'TypeScript', 'Node.js', 'Express', ' Jest'], roles_icon: style.icon_2, also: null, additionally: [] },
+    { id: 3, name: 'Архитектор баз данных', description: ['MySQL', 'PostgreSQL'], roles_icon: style.icon_3, also: 'а также', additionally: ['Mocha', 'Jest', 'Git', 'Figma'] }]
 
     return <>
         <div className={style.wrapper}>
@@ -52,19 +52,19 @@ export default function Preview() {
                 viewport={{ once: true }}
                 className={style.skills}>
                 <div className={style.roles}>
-                    {arr_roles.map((el) => <motion.div  custom={4+el.id} variants={animation} key={el.id} className={style.roles_item}>
+                    {arr_roles.map((el) => <motion.div custom={4 + el.id} variants={animation} key={el.id} className={style.roles_item}>
                         <div className={el.roles_icon}></div>
                         <div className={style.info_item}>
                             <h3 className={style.roles_name}>{el.name}</h3>
-                            <p>{el.description}</p>
                             <div className={style.line}></div>
-                            <ul>
-                                <h3>У меня был опыт с</h3>
-                                <li>Firebase Database</li>
-                                <li>MySQL Database</li>
-                                <li>GIT, GitHub, Bitbucket</li>
-                                <li>Figma, Adobe XD, Sketch</li>
-                            </ul>
+                            <h3>Я работала с</h3>
+                            {el.description.map((elem, i) => <ul key={`${el.id}-desc-${i}`}>
+                                <li>{elem}</li>
+                            </ul>)}
+                            <h3 className={style.roles_name}>{el.also}</h3>
+                            {el.additionally.map((element, index) => <ul key={`${el.id}-add-${index}`}>
+                                <li>{element}</li>
+                            </ul>)}
                         </div>
                     </motion.div>)}
                 </div>

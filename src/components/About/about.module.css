@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 300px 5px;
+    margin: 250px 5px;
     max-width: 1335px;
 
     .info {
@@ -11,18 +11,14 @@
         margin: auto;
 
         h2 {
-            font-family: Poppins;
-            font-size: 150px;
-            font-weight: 800;
+            font: 700 90px Montserrat;
             text-align: center;
-            line-height: 150px;
+            line-height: 90px;
             color: #000000;
         }
 
         p {
-            font-family: Poppins;
-            font-size: 22px;
-            font-weight: 400;
+            font: 400 22px Montserrat;
             line-height: 33px;
             text-align: center;
 
@@ -35,18 +31,41 @@
             color: #fefefe;
             border-radius: 15px;
             padding: 11px 34px;
-            font-family: Poppins;
-            font-size: 20px;
-            font-weight: 600;
+            font: 600 20px Montserrat;
 
         }
     }
 
 }
 
-@media screen and (max-width:800px) {
-    .wrapper .info h2 {
-        font-size: 120px;
-        line-height: 120px;
+@media screen and (max-width:600px) {
+    .wrapper .info {
+        h2 {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .wrapper .info {
+        h2 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        button {
+            font-size: 16px;
+        }
     }
 }
