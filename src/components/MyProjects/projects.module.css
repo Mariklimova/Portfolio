@@ -71,6 +71,7 @@
 
             .environment {
                 display: flex;
+                flex-wrap: wrap;
                 gap: 6px;
 
                 .env_item {
@@ -93,17 +94,13 @@
             }
 
             .text_item {
-                font: 400 14px Montserrat;
-                line-height: 17.6px;
-                text-align: left;
+                font: 400 12px Montserrat;
+                text-align:left;
                 color: #000000;
             }
 
             .view {
-                font-family: Poppins;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 19.12px;
+                font: 600 16px Montserrat;
                 text-align: left;
                 color: #022f8a;
             }
