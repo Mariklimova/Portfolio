@@ -3,19 +3,15 @@
     /* max-width: 1335px; */
 
     h2 {
-        font-family: Poppins;
-        font-size: 44px;
-        font-weight: 800;
-        line-height: 100px;
+        font: 800 44px Montserrat;
+        line-height: 50px;
         text-align: center;
         color: #022f8a;
     }
 
     p {
-        font-family: Poppins;
-        font-size: 25px;
-        font-weight: 300;
-        line-height: 100px;
+        font: 300 25px Montserrat;
+        /* line-height: 50px; */
         text-align: center;
         color: #000000;
     }
@@ -36,14 +32,41 @@
             gap: 10px;
             max-width: 350px;
 
-            .img_item1 {
-                background-image: url(${img1});
+            .img_item_1, .img_item_2, .img_item_3,
+            .img_item_4, .img_item_5,
+            .img_item_6, .img_item_7 {
                 width: 320px;
-                height: 250px;
+                height: 200px;
                 background-size: contain;
                 background-repeat: no-repeat;
-                background-color: #939393;
                 border-radius: 12px;
+            }
+            .img_item_1 {
+                background-image: url(${img1});
+            }
+
+            .img_item_2 {
+                background-image: url(${img2});
+            }
+
+            .img_item_3 {
+                background-image: url(${img3});
+            }
+
+            .img_item_4 {
+                background-image: url(${img4});
+            }
+
+            .img_item_5 {
+                background-image: url(${img5});
+            }
+
+            .img_item_6 {
+                background-image: url(${img6});
+            }
+
+            .img_item_7 {
+                background-image: url(${img7});
             }
 
             .environment {
@@ -56,9 +79,7 @@
                     border-radius: 10px;
 
                     p {
-                        font-family: Poppins;
-                        font-size: 10px;
-                        font-weight: 700;
+                        font: 700 9px Montserrat;
                         line-height: 10.93px;
                         text-align: left;
                         color: #000000;
@@ -67,18 +88,12 @@
             }
 
             .name_item {
-                font-family: Poppins;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 22.63px;
-                text-align: left;
+                font: 500 18px Montserrat;
                 color: #000000;
             }
 
             .text_item {
-                font-family: Poppins;
-                font-size: 14px;
-                font-weight: 400;
+                font: 400 14px Montserrat;
                 line-height: 17.6px;
                 text-align: left;
                 color: #000000;

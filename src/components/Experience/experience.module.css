@@ -73,7 +73,7 @@
             width: 266px;
             height: 266px;
             left: 82%;
-            top:-70px;
+            top: -70px;
         }
 
         .nextjs {
@@ -86,8 +86,12 @@
     }
 }
 
-@media screen and (max-width:1000px){
-    .images {
-        display: none;
-    } 
+@media screen and (max-width:1000px) {
+    .wrapper {
+        margin: 300px 0 0;
+
+        .images {
+            display: none;
+        }
+    }
 }

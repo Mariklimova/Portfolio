@@ -29,7 +29,7 @@ export default function About() {
             footer.scrollIntoView({ behavior: 'smooth' });
         }
     };
-    return <>
+    return <section>
         <motion.div
             initial='hiddenHorizontal'
             whileInView='visibleHorizontal'
@@ -37,10 +37,12 @@ export default function About() {
             className={style.wrapper}>
             <div className={style.info}>
                 <motion.h2 custom={1} variants={animation}>Свяжитесь со мной</motion.h2>
-                <motion.p custom={2} variants={animation}>Я заитересованный разработчик Front-end. Не стесняйтесь изучать мое портфолио, чтобы увидеть разнообразные проекты, которые я выполнил. Если вас заинтересовала моя работа и вы хотите, чтобы я воплотил ваш проект в жизнь, не стесняйтесь обращаться ко мне!</motion.p>
+                <motion.p custom={2} variants={animation}>если, Вам нужен увлечённый Front-end разработчик, который стремиться создавать не только функциональные, но красивые и удобные интерфейсы, которые привлекают пользователей и повышают их вовлечённость.
+В моём портфолио Вы найдёте проекты, в которых я использовал современные технологии и подходы. Если Вы ищете разработчика, готового внедрять инновации и работать над интересными проектами, буду рад обсудить сотрудничество.
+ Давайте вместе создадим нечто уникальное и впечатляющее!С нетерпением жду возможности пообщаться!</motion.p>
                 <motion.button custom={3} variants={animation} onClick={handleContactClick}>Мои контакты</motion.button>
 
             </div>
         </motion.div>
-    </>
+    </section>
 }

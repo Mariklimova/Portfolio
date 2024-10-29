@@ -31,7 +31,7 @@ export default function Preview() {
     { id: 2, name: 'Backend', description: ['JavaScript', 'TypeScript', 'Node.js', 'Express', ' Jest'], roles_icon: style.icon_2, also: null, additionally: [] },
     { id: 3, name: 'Архитектор баз данных', description: ['MySQL', 'PostgreSQL'], roles_icon: style.icon_3, also: 'а также', additionally: ['Mocha', 'Jest', 'Git', 'Figma'] }]
 
-    return <>
+    return <section>
         <div className={style.wrapper}>
             <motion.div
                 initial='hiddenVertical'
@@ -73,5 +73,5 @@ export default function Preview() {
                 </div>
             </motion.div>
         </div>
-    </>
+    </section>
 }

@@ -22,36 +22,34 @@ export default function Experience() {
         { id: 6, description: 'Знание принципов объектно-ориентированного программирования, реализация принципов SOLID и REST.' }
     ];
 
-    return (
-        <>
-            <div className={style.wrapper}>
-                <h2 className={style.title}>Моя работа</h2>
-                <p>как fullstack разработчика</p>
-                <div className={style.exp_items}>
-                    {arr_experience.map((el) => (
-                        <div key={el.id} className={style.border_item}>
-                            <p className={style.description_item}>{el.description}</p>
-                        </div>
-                    ))}
-                </div>
-                <motion.div
-                    className={style.images}
-                >
-                    <motion.div
-                        className={style.react}
-                        variants={animation}
-                        animate='animate'
-                        transition={animation.transition}
-                    />
-                    <div className={style.js}></div>
-                    <motion.div
-                        className={style.nextjs}
-                        variants={animation}
-                        animate='animate'
-                        transition={animation.transition}
-                    />
-                </motion.div>
+    return <section>
+        <div className={style.wrapper}>
+            <h2 className={style.title}>Моя работа</h2>
+            <p>как fullstack разработчика</p>
+            <div className={style.exp_items}>
+                {arr_experience.map((el) => (
+                    <div key={el.id} className={style.border_item}>
+                        <p className={style.description_item}>{el.description}</p>
+                    </div>
+                ))}
             </div>
-        </>
-    );
+            <motion.div
+                className={style.images}
+            >
+                <motion.div
+                    className={style.react}
+                    variants={animation}
+                    animate='animate'
+                    transition={animation.transition}
+                />
+                <div className={style.js}></div>
+                <motion.div
+                    className={style.nextjs}
+                    variants={animation}
+                    animate='animate'
+                    transition={animation.transition}
+                />
+            </motion.div>
+        </div>
+    </section>;
 }
