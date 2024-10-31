@@ -1,17 +1,16 @@
 .wrapper {
-    margin: 0 0 200px;
+    margin: 150px 0;
     /* max-width: 1335px; */
 
     h2 {
         font: 800 44px Montserrat;
-        line-height: 50px;
         text-align: center;
         color: #022f8a;
+        margin-bottom: 20px;
     }
-
+    
     p {
         font: 300 25px Montserrat;
-        /* line-height: 50px; */
         text-align: center;
         color: #000000;
     }
@@ -21,6 +20,7 @@
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
+        margin-top: 20px;
 
         .project_item {
             border: 2px solid #000000;
@@ -108,4 +108,20 @@
         }
 
     }
+}
+
+@media screen and (max-width: 800px) {
+	.wrapper {
+		& h1 {
+			font-size: 70px;
+		}
+
+		& h2 {
+			font-size: 44px;
+		}
+
+		& p {
+			font-size: 18px;
+		}
+	}
 }

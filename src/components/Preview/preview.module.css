@@ -20,7 +20,6 @@
 
             h1 {
                 font: 800 88px Montserrat;
-                line-height: 100px;
                 color: #022f8a;
             }
         }
@@ -39,7 +38,6 @@
     .skills {
         display: flex;
         margin-top: 100px;
-        /* justify-content: center; */
 
         .roles {
             display: flex;
@@ -97,9 +95,11 @@
 @media screen and (max-width:1000px) {
     .wrapper .visit_card {
         justify-content: center;
+        gap: 20px;
 
         .about_me {
             text-align: center;
+            gap: 20px;
         }
 
         img {
@@ -118,7 +118,6 @@
     .wrapper .visit_card .about_me {
         & h1 {
             font-size: 70px;
-            line-height: 80px;
         }
 
         & p {
@@ -134,7 +133,7 @@
     }
 }
 
-@media screen and (max-width:400px) {
+/* @media screen and (max-width:400px) {
     .wrapper .visit_card .about_me {
         & h1 {
             font-size: 55px;
@@ -146,4 +145,14 @@
         }
 
     }
+} */
+
+
+@media screen and (max-width: 520px) {
+	.wrapper .visit_card .about_me {
+		& h1 {
+			font-size: 44px;
+		}
+
+	}
 }
