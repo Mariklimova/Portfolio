@@ -5,8 +5,7 @@
     align-items: center;
 
     .title {
-        font: 800 30px Poppins;
-        color: #000000;
+        font-size: 28px;
     }
 
     .line {
@@ -41,11 +40,7 @@
         }
 
         .telegram {
-            background-image: url('./assets/telegram.svg');
-        }
-
-        .instagram {
-            background-image: url('./assets/instagram.svg');
+            background-image: url('./assets/telegram2.svg');
         }
 
         .email {
@@ -55,21 +50,21 @@
         .email::after {
             content: "mariku22@yandex.ru";
             position: absolute;
-            bottom: 100%; 
-            left: 50%; 
+            bottom: 100%;
+            left: 50%;
             transform: translateX(-50%);
-            background-color: rgba(200, 200, 200, 0.9); /* Серый фон */
+            background-color: rgba(200, 200, 200, 0.9);
             color: #000;
             padding: 8px;
             border-radius: 4px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             white-space: nowrap;
             visibility: hidden;
             opacity: 0;
-            transition: opacity 0.3s, visibility 0.3s; /* Плавный переход */
+            transition: opacity 0.3s, visibility 0.3s;
             font: 700 14px Montserrat;
         }
-    
+
         .email:hover::after {
             visibility: visible;
             opacity: 1;
@@ -80,5 +75,13 @@
 @media screen and (max-width:800px) {
     .wrapper .icons_contacts {
         gap: 40px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .icons_contacts {
+        .email:hover::after {
+            font: 700 12px Montserrat;
+        }
     }
 }

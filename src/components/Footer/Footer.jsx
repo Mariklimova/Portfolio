@@ -8,7 +8,6 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/marina-klimova-685416286"><div className={style.linkedin}></div></a>
             <a href="https://github.com/Mariklimova"><div className={style.github}></div></a>
             <a href="https://t.me/MariKlimovaDev"><div className={style.telegram}></div></a>
-            <div className={style.instagram}></div>
             <div className={style.email}></div>
         </nav>
     </footer>
