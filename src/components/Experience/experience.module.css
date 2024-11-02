@@ -1,17 +1,9 @@
 .wrapper {
-    margin: 300px 0 650px;
+    margin: 300px 0 500px;
 
     .title {
         font: 800 44px Montserrat;
-        text-align: center;
-        color: #000000;
-    }
-
-    p {
-        font: 300 25px Montserrat;
-        text-align: center;
-        color: #000000;
-        margin: 20px 0;
+        margin-bottom: 20px;
     }
 
     .exp_items {
@@ -21,6 +13,7 @@
         z-index: 10;
         position: relative;
         flex-wrap: wrap;
+        margin-top: 80px;
 
         .border_item {
             border: 1px solid #000000;
@@ -36,7 +29,6 @@
 
             .description_item {
                 font: 500 16px Montserrat;
-                color: #000000;
             }
 
         }
@@ -54,7 +46,7 @@
         }
 
         .react {
-            background-image: url('./assets/react2.svg');
+            background-image: url('./assets/react.svg');
             width: 491px;
             height: 436px;
             right: -15%;
@@ -63,7 +55,7 @@
         }
 
         .js {
-            background-image: url('./assets/JS2.svg');
+            background-image: url('./assets/JS.svg');
             width: 266px;
             height: 266px;
             right: -2%;
@@ -71,7 +63,7 @@
         }
 
         .nextjs {
-            background-image: url('./assets/nextjs2.svg');
+            background-image: url('./assets/nextjs.svg');
             width: 461px;
             height: 452px;
             left: -15%;
@@ -88,12 +80,4 @@
             display: none;
         }
     }
-}
-
-@media screen and (max-width: 800px) {
-	.wrapper {
-		& p {
-			font-size: 18px;
-		}
-	}
 }

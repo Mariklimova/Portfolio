@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 250px 5px;
+    margin: 250px 0;
     max-width: 1335px;
 
     .info {
@@ -9,18 +9,6 @@
         gap: 20px;
         max-width: 1025px;
         margin: auto;
-
-        h2 {
-            font: 700 90px Montserrat;
-            text-align: center;
-            color: #000000;
-        }
-
-        p {
-            font: 400 22px Montserrat;
-            text-align: center;
-
-        }
 
         button {
             border: 1px solid #000000;
@@ -38,48 +26,12 @@
 
 @media screen and (max-width: 800px) {
     .wrapper {
-        & h1 {
-            font-size: 70px;
-        }
-
-        & .info h2 {
+        .info h2 {
             font-size: 44px;
         }
 
-        & p {
+        p {
             font-size: 18px;
         }
     }
 }
-
-/* @media screen and (max-width:600px) {
-    .wrapper .info {
-        h2 {
-            font-size: 80px;
-            line-height: 80px;
-        }
-
-        p {
-            font-size: 20px;
-            line-height: 30px;
-        }
-    }
-}
-
-@media screen and (max-width:400px) {
-    .wrapper .info {
-        h2 {
-            font-size: 60px;
-            line-height: 60px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        button {
-            font-size: 16px;
-        }
-    }
-} */

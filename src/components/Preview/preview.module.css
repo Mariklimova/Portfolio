@@ -15,7 +15,7 @@
 
             p {
                 font: 400 22px Montserrat;
-                color: #000000;
+                text-align: left;
             }
 
             h1 {
@@ -76,15 +76,16 @@
                 }
 
                 .line {
-                    border:1px solid #66666676;
+                    border: 1px solid #66666676;
 
                 }
 
                 .info_item ul {
                     list-style-type: square;
+
                     li {
                         font: 400 12px Montserrat;
-                        color: #000000;
+                       text-align: left;
                     }
                 }
             }
@@ -149,10 +150,10 @@
 
 
 @media screen and (max-width: 520px) {
-	.wrapper .visit_card .about_me {
-		& h1 {
-			font-size: 44px;
-		}
+    .wrapper .visit_card .about_me {
+        & h1 {
+            font-size: 44px;
+        }
 
-	}
+    }
 }

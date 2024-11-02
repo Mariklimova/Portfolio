@@ -2,12 +2,9 @@
     margin: 150px 0;
 
     h2 {
+        font: 800 44px Montserrat;
         color: #022f8a;
         margin-bottom: 20px;
-    }
-
-    p {
-        text-align: center;
     }
 
     .whirligig_projects {
