@@ -16,14 +16,16 @@ a {
   text-decoration: none;
 }
 
-p, ul li {
+p,
+ul li {
   font: 400 22px Montserrat;
   color: #000000;
   text-align: center;
 }
 
 h1 {
-  font: 400 88px Montserrat;
+  font: 800 88px Montserrat;
+  color: #022f8a;
 }
 
 h2 {

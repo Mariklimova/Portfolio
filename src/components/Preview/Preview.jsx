@@ -43,7 +43,7 @@ export default function Preview() {
                     <motion.h1 custom={2} variants={animation}>Full Stack Разработчик</motion.h1>
                     <motion.p custom={3} variants={animation}>занимающийся разработкой как фронтенда, так и бэкенда, что позволяет мне создавать полноценные веб-приложения от начала до конца. Я сосредоточена на использовании современных технологий для создания динамических веб-приложений, создавая бесперебойный пользовательский интерфейс и воплощающий свои идеи в жизнь.</motion.p>
                 </div>
-                <motion.img
+                <motion.img className={style.img}
                     custom={4} variants={animation} src={foto} alt="foto" />
             </motion.div>
             <motion.div

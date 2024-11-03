@@ -22,7 +22,7 @@ export default function Experience() {
         { id: 6, description: 'Знание принципов объектно-ориентированного программирования, реализация принципов SOLID и REST.' }
     ];
 
-    return <section>
+    return <section id='experience'>
         <div className={style.wrapper}>
             <h2 className={style.title}>Моя работа</h2>
             <p>как fullstack разработчика</p>

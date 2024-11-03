@@ -39,7 +39,7 @@ export default function About() {
             footer.scrollIntoView({ behavior: 'smooth' });
         }
     };
-    return <section>
+    return <section id='about'>
         <motion.div
             initial='hiddenHorizontal'
             whileInView='visibleHorizontal'

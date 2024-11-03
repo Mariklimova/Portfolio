@@ -17,7 +17,7 @@ export default function MyProjects() {
     { id: 6, name: 'Vacancies', environment: ['javascript', 'html', 'scss', 'react', 'material ui', 'localstorage'], description: 'Проект представляет собой веб-приложение, предназначенное для поиска и управления вакансиями. Пользователи могут искать вакансии, добавлять их в список избранного, просматривать подробности о каждой вакансии, а также управлять своим списком избранных позиций', img: vacancies, style_img: style.img_item_6,link:'https://github.com/Mariklimova/React-FilterBlocks' },
     { id: 7, name: 'Presentation-adaptive', environment: ['javascript', 'html', 'css', 'react'], description: 'Данный проект является веб-приложением, разработанным с целью предоставления пользователю возможности взаимодействовать с функциональностью, связанной с демо-версией услуг компании', img: presentation, style_img: style.img_item_7,link:'https://github.com/Mariklimova/Presentation-adaptive' },]
 
-    return <section>
+    return <section id='projects'>
         <div className={style.wrapper}>
             <h2>Мои проекты</h2>
             <p>Некоторые проекты, которые я реализовала</p>
