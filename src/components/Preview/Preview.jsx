@@ -26,7 +26,7 @@ const animation = {
 export default function Preview() {
 
     const arr_roles = [{
-        id: 1, name: 'Frontend', description: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Redux Toolkit', 'Redux Toolkit Query', 'Material UI', 'Mantine', 'HTML', 'CSS/SCSS', 'Framer motion', 'Styled components'], roles_icon: style.icon_1, also: null, additionally: []
+        id: 1, name: 'Frontend', description: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Redux Toolkit', 'Redux Toolkit Query', 'Material UI', 'Mantine', 'HTML', 'CSS/SCSS', 'Framer motion', 'Styled components','React Native'], roles_icon: style.icon_1, also: null, additionally: []
     },
     { id: 2, name: 'Backend', description: ['JavaScript', 'TypeScript', 'Node.js', 'Express', ' Jest'], roles_icon: style.icon_2, also: null, additionally: [] },
     { id: 3, name: 'Архитектор баз данных', description: ['MySQL', 'PostgreSQL'], roles_icon: style.icon_3, also: 'а также', additionally: ['Mocha', 'Jest', 'Git', 'Figma'] }]
@@ -40,7 +40,7 @@ export default function Preview() {
                 className={style.visit_card}>
                 <div className={style.about_me}>
                     <motion.p custom={1} variants={animation}>Привет, меня зовут Марина Климова, и я</motion.p>
-                    <motion.h1 custom={2} variants={animation}>Full Stack Разработчик</motion.h1>
+                    <motion.h1 custom={2} variants={animation}>FullStack Разработчик</motion.h1>
                     <motion.p custom={3} variants={animation}>занимающийся разработкой как фронтенда, так и бэкенда, что позволяет мне создавать полноценные веб-приложения от начала до конца. Я сосредоточена на использовании современных технологий для создания динамических веб-приложений, создавая бесперебойный пользовательский интерфейс и воплощающий свои идеи в жизнь.</motion.p>
                 </div>
                 <motion.img className={style.img}

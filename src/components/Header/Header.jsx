@@ -9,7 +9,7 @@ export default function Header() {
     document.documentElement.style.overflow = isShowBurger ? 'hidden' : 'auto';
   }, [isShowBurger]);
 
-  const handleScrollTo = (id) => {
+   const handleScrollTo = (id) => {
     const element = document.getElementById(id);
     if (element) element.scrollIntoView({ behavior: 'smooth' });
   };
@@ -29,14 +29,14 @@ export default function Header() {
       </div>
 
       <div className={style.burger}>
-        <div className={style.burgerIcon} onClick={() => setShowBurger(!isShowBurger)}></div>
+        <div className={style.burger_icon} onClick={() => setShowBurger(!isShowBurger)}></div>
 
         {isShowBurger && (
-          <div className={style.burgerMenu}>
-            <div className={style.closeIcon} onClick={() => setShowBurger(false)}></div>
-            <p onClick={() => handleScrollTo('about')}>Обо мне</p>
-            <p onClick={() => handleScrollTo('experience')}>Опыт работы</p>
-            <p onClick={() => handleScrollTo('projects')}>Мои проекты</p>
+          <div className={style.burger_menu}>
+            <div className={style.close_icon} onClick={() => setShowBurger(false)}></div>
+            <p onClick={() =>{setShowBurger(false), handleScrollTo('about')}}>Обо мне</p>
+            <p onClick={() => {setShowBurger(false),handleScrollTo('experience')}}>Опыт работы</p>
+            <p onClick={() => {setShowBurger(false),handleScrollTo('projects')}}>Мои проекты</p>
           </div>
         )}
       </div>

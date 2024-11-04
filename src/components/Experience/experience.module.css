@@ -42,6 +42,7 @@
         .nextjs {
             background-repeat: no-repeat;
             background-size: contain;
+            /* object-fit: cover;  */
             position: absolute;
         }
 
