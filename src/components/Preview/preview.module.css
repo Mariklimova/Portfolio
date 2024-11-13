@@ -10,7 +10,6 @@
         .about_me {
             display: flex;
             flex-direction: column;
-            /* justify-content: center; */
             max-width: 629px;
 
             p {
@@ -46,7 +45,9 @@
 
                 .icon_1,
                 .icon_2,
-                .icon_3 {
+                .icon_3,
+                .icon_4,
+                .icon_5{
                     width: 30px;
                     height: 30px;
                     background-size: contain;
@@ -64,6 +65,12 @@
                 .icon_3 {
                     background-image: url('./assets/icon3.svg');
                 }
+                .icon_4 {
+                    background-image: url('./assets/icon4.svg');
+                }
+                .icon_5 {
+                    background-image: url('./assets/icon5.svg');
+                }
 
                 h3 {
                     font: 800 22px Montserrat;
@@ -72,7 +79,6 @@
 
                 .line {
                     border: 1px solid #66666676;
-
                 }
 
                 .info_item {
@@ -85,12 +91,24 @@
                         margin-top: 10px;
 
                         li {
-                            font: 400 16px Montserrat;
+                            font: 400 20px Montserrat;
                             text-align: left;
+                            margin: 15px 0;
                         }
                     }
+
+                    .btn_show{
+                        border: none;
+                        background-color: #F9F5F2;
+                        color: #66666676;
+                        font: 600 18px Montserrat;
+                        cursor: pointer;
+                    }
                 }
+
             }
+
+            
         }
     }
 }

@@ -42,7 +42,6 @@
         .nextjs {
             background-repeat: no-repeat;
             background-size: contain;
-            /* object-fit: cover;  */
             position: absolute;
         }
 
@@ -59,8 +58,8 @@
             background-image: url('./assets/JS.svg');
             width: 266px;
             height: 266px;
-            right: -2%;
-            top: -60px;
+            right: -5%;
+            top: -50px;
         }
 
         .nextjs {
