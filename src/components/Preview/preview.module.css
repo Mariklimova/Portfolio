@@ -30,7 +30,39 @@
 
     .skills {
         display: flex;
-        margin-top: 100px;
+        flex-direction: column;
+        gap: 80px;
+        margin-top: 150px;
+
+        .language {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            .icon_1 {
+                background-image: url('./assets/icon1.svg');
+                width: 30px;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            h3 {
+                font: 800 22px Montserrat;
+                color: #000000;
+            }
+            .line {
+                border: 1px solid #66666676;
+                margin-top: 5px;
+            }
+            .text{
+                display: flex;
+                gap: 20px;
+            }
+        }
+
+       
 
         .roles {
             width: 100%;
@@ -43,19 +75,14 @@
                 display: flex;
                 gap: 15px;
 
-                .icon_1,
                 .icon_2,
                 .icon_3,
                 .icon_4,
-                .icon_5{
+                .icon_5 {
                     width: 30px;
                     height: 30px;
                     background-size: contain;
                     background-repeat: no-repeat;
-                }
-
-                .icon_1 {
-                    background-image: url('./assets/icon1.svg');
                 }
 
                 .icon_2 {
@@ -65,9 +92,11 @@
                 .icon_3 {
                     background-image: url('./assets/icon3.svg');
                 }
+
                 .icon_4 {
                     background-image: url('./assets/icon4.svg');
                 }
+
                 .icon_5 {
                     background-image: url('./assets/icon5.svg');
                 }
@@ -97,7 +126,7 @@
                         }
                     }
 
-                    .btn_show{
+                    .btn_show {
                         border: none;
                         background-color: #F9F5F2;
                         color: #66666676;
@@ -108,7 +137,7 @@
 
             }
 
-            
+
         }
     }
 }

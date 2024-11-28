@@ -32,14 +32,14 @@ const SkillList = ({ skills }) => {
     </ul>;
 };
 
-const SkillSection = ({ skills, itemsToShow = 4 }) => {
+const SkillSection = ({ skills, itemsToShow = 5 }) => {
     const [showMore, setShowMore] = useState(false);
     const visibleSkills = showMore ? skills : skills.slice(0, itemsToShow);
 
     return <div>
         <SkillList skills={visibleSkills} />
         <AnimatePresence>
-            {skills.length > 4 && (
+            {skills.length > 5 && (
                 <button className={style.btn_show} onClick={() => setShowMore(!showMore)} key={showMore ? 'showLess' : 'showMore'}>
                     {showMore ? 'Свернуть' : 'Показать больше'}
                 </button>
@@ -50,11 +50,10 @@ const SkillSection = ({ skills, itemsToShow = 4 }) => {
 
 export default function Preview() {
 
-    const arr_roles = [{ id: 1, name: 'Языки', description: ['JavaScript', 'TypeScript'], roles_icon: style.icon_1 },
-    { id: 2, name: 'Frontend', description: ['React', 'Next.js', 'React Native', 'Redux Toolkit', 'Redux Toolkit Query', 'Material UI', 'Mantine', 'HTML', 'CSS/SCSS', 'Framer motion', 'Styled components'], roles_icon: style.icon_2 },
-    { id: 3, name: 'Backend', description: ['Node.js', 'Express'], roles_icon: style.icon_3 },
-    { id: 4, name: 'Архитектор БД', description: ['MySQL', 'PostgreSQL'], roles_icon: style.icon_4 },
-    { id: 5, name: 'Дополнительно', description: ['Mocha', 'Jest', 'Git', 'Figma'], roles_icon: style.icon_5 }]
+    const arr_roles = [{ id: 1, name: 'Frontend', description: ['React', 'React Native', 'Next.js', 'Redux Toolkit', 'Redux Toolkit Query', 'Material UI', 'Mantine', 'HTML', 'CSS/SCSS', 'Framer motion', 'Styled components'], roles_icon: style.icon_2 },
+    { id: 2, name: 'Backend', description: ['Node.js', 'Express'], roles_icon: style.icon_3 },
+    { id: 3, name: 'Архитектор БД', description: ['MySQL', 'PostgreSQL'], roles_icon: style.icon_4 },
+    { id: 4, name: 'Дополнительно', description: ['Mocha', 'Jest', 'Git', 'Figma'], roles_icon: style.icon_5 }]
 
 
     return <section>
@@ -72,18 +71,28 @@ export default function Preview() {
                 <motion.img className={style.img}
                     custom={4} variants={animation} src={foto} alt="foto" />
             </motion.div>
+
             <motion.div
                 initial='hiddenVertical'
                 whileInView='visibleVertical'
                 viewport={{ once: true }}
                 className={style.skills}>
+                <motion.div custom={5} variants={animation} className={style.language}>
+                    <div className={style.icon_1}></div>
+                    <div className={style.text_area}>
+                        <div className={style.text}>
+                        <h3 className={style.roles_name}>Языки</h3>
+                        <p className={style.description}>JavaScript, TypeScript</p>
+                        </div>
+                        <div className={style.line} />
+                    </div>
+                </motion.div>
                 <div className={style.roles}>
-                    {arr_roles.map((el) => <motion.div custom={4 + el.id} variants={animation} key={el.id} className={style.roles_item}>
+                    {arr_roles.map((el) => <motion.div custom={5 + el.id} variants={animation} key={el.id} className={style.roles_item}>
                         <div className={el.roles_icon}></div>
                         <div className={style.info_item}>
                             <h3 className={style.roles_name}>{el.name}</h3>
                             <div className={style.line} />
-                            <h3>Я работала с</h3>
                             <SkillSection skills={el.description} />
                         </div>
                     </motion.div>)}
